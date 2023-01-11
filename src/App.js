@@ -11,7 +11,8 @@ function App() {
             return (
               <Card 
                 name={asset.name}
-                saldo={asset.saldo}
+                balance={asset.balance}
+                src={asset.src}
                 currency={asset.currency}
                 minor={asset.minor}
                 currencyMinor={asset.currencyMinor}

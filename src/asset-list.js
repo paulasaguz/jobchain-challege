@@ -1,29 +1,42 @@
 export const AssetList = [
   {
-    name: 'bitcoin',
-    saldo: "0,9",
-    currency: "B",
+    name: 'Bitcoin',
+    src: 'bitcoin.png',
+    balance: "0,9",
+    currency: "BTC",
     minor: '0.00009',
-    currencyMinor: 'btc',
+    currencyMinor: '€',
     mayor: '19.50',
-    currencyMayor: 'e'
+    currencyMayor: '€'
   }, 
   {
     name: 'Ethereum',
-    saldo: "0,9",
-    currency: "B",
+    src: 'ether.png',
+    balance: "0,9",
+    currency: "ETH",
     minor: '0.00009',
-    currencyMinor: 'btc',
+    currencyMinor: '€',
     mayor: '19.50',
-    currencyMayor: 'e'
+    currencyMayor: '€'
   },
   {
     name: 'JobChain',
-    saldo: "0,9",
-    currency: "B",
+    src: 'jobchain.png',
+    balance: "0,9",
+    currency: "JOB",
     minor: '0.00009',
-    currencyMinor: 'btc',
+    currencyMinor: '€',
     mayor: '19.50',
-    currencyMayor: 'e'
+    currencyMayor: '€'
+  },
+  {
+    name: 'Tether',
+    src: 'tether.png',
+    balance: "0,9",
+    currency: "USDT",
+    minor: '0.00009',
+    currencyMinor: '€',
+    mayor: '19.50',
+    currencyMayor: '€'
   }
 ]

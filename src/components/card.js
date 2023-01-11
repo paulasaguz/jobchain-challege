@@ -1,26 +1,26 @@
 import './style.css'
-import bitcoinImage from './bitcoint-asset.png'
 
 function Card({
   name,
-  saldo,
+  balance,
   currency,
   minor,
   currencyMinor,
   mayor,
   currencyMayor,
+  src,
 }) {
   return (
     <div className="card">
-      <img className="image" src={bitcoinImage} alt="Bitcoin" width="200px" height="200px"/>
+      <img className="image" src={src} alt="Bitcoin" width="200px" height="200px"/>
       <div className='price-container'>
           <div>
-            <h2 className='title'>{name}<span className='subtitle'>BTC</span></h2>
-            <p>{currency}</p>
+            <p className='title'>{name} <span className='subtitle'>{currency}</span></p>
+            <small>{mayor} {currencyMayor}</small>
           </div>
-          <div>
-            <p>{saldo}</p>
-            <p>{minor} {currencyMinor}</p>
+          <div className='align-right'>
+            <p>{balance}</p>
+            <small>-{minor} {currencyMinor}</small>
           </div>
       </div>
     </div>
