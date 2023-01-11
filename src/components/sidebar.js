@@ -3,16 +3,22 @@ function Sidebar() {
     <div className="sidebar">
       <ul>
         <li>
-          <a href="/"></a>
+          <a href="/">JC</a>
         </li>
         <li>
-          <a href="/"></a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a href="/"></a>
+          <a href="/">Trade</a>
         </li>
         <li>
-          <a href="/"></a>
+          <a href="/">Help</a>
+        </li>
+        <li>
+          <a href="/">Books</a>
+        </li>
+        <li>
+          <a href="/">Noti</a>
         </li>
       </ul>
 

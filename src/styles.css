@@ -1,3 +1,13 @@
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
