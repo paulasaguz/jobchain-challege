@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/card'
+import { AssetList } from './asset-list'
+import './styles.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Mi Billetera</h1>
+        <div className='card-container'>
+          {AssetList.map((asset) => {
+            return (
+              <Card 
+                name={asset.name}
+                saldo={asset.saldo}
+                currency={asset.currency}
+                minor={asset.minor}
+                currencyMinor={asset.currencyMinor}
+                mayor={asset.mayor}
+                currencyMayor={asset.currencyMayor}
+              />
+            )
+          })}
+        </div>
     </div>
   );
 }
